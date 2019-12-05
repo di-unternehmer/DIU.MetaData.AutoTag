@@ -1,0 +1,7 @@
+DIU:
+  MetaData:
+    AutoTag:
+      setTagsFromIptcKeywords: true
+      setCopyrightNoticeFromIptc: true
+      setTitleFromIptcTitle: true
+      setCaptionFromIptcDescription: true
