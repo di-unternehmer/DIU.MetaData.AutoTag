@@ -72,6 +72,10 @@ class AssetTagMapper
      */
     public function mapMetaData(Asset $asset): void
     {
+        if ($asset instanceof ImageVariant) {
+            return;
+        }
+
         /** @var MetaDataCollection $metaData */
         $metaDataCollection = $this->extractionManager->extractMetaData($asset);
         if (!$metaDataCollection) {
