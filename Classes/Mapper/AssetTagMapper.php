@@ -8,6 +8,7 @@ use Neos\Flow\Persistence\Doctrine\PersistenceManager;
 use Neos\Flow\Persistence\Exception;
 use Neos\Flow\Persistence\Exception\IllegalObjectTypeException;
 use Neos\Media\Domain\Model\Asset;
+use Neos\Media\Domain\Model\ImageVariant;
 use Neos\Media\Domain\Model\Tag;
 use Neos\Media\Domain\Repository\TagRepository;
 use Neos\MetaData\Domain\Collection\MetaDataCollection;
