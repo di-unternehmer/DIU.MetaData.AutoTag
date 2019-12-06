@@ -20,7 +20,6 @@ class Package extends BasePackage
     public function boot(Bootstrap $bootstrap)
     {
         $dispatcher = $bootstrap->getSignalSlotDispatcher();
-        //$dispatcher->connect(MetaDataManager::class, 'metaDataCollectionUpdated', AssetTagMapper::class, 'mapMetaData');
         $dispatcher->connect(AssetService::class, 'assetCreated', AssetTagMapper::class, 'mapMetaData');
 
     }
